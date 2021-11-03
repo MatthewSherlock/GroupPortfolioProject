@@ -17,6 +17,7 @@ APortfolioProjectHUD::APortfolioProjectHUD()
 
 void APortfolioProjectHUD::DrawHUD()
 {
+	
 	Super::DrawHUD();
 
 	// Draw very simple crosshair
@@ -32,4 +33,5 @@ void APortfolioProjectHUD::DrawHUD()
 	FCanvasTileItem TileItem( CrosshairDrawPosition, CrosshairTex->Resource, FLinearColor::White);
 	TileItem.BlendMode = SE_BLEND_Translucent;
 	Canvas->DrawItem( TileItem );
+	
 }
